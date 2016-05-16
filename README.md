@@ -16,9 +16,32 @@ I created such file using bash commands:
 zcat auth.txt.gz | cat -n | grep '00000    ' > sample2.csv
 cat sample2.csv | cut -f 2 > sample2v.csv
 ```
-After that I used jupyter notebook for my initial analysis that one can see in
-
+After that I used jupyter notebook for my initial analysis that one can see in 
+```
+exploration.ipynb or  	exploration.pdf
+```
 
 ## Trying machine learning
 
+I collected roughly 400,000 data points randomly sampled from auth.txt.gz so that the number of "fails" and "success" were about the same. The code for this task can be found in 
+```
+multisample.py
+```
+
+I then jupyter notebook to creat 55 features and tried a few classifiers to see how well I can predict success for authentication. This code and results can be found in
+
+```
+machine learning.ipynb or machine learning.pdf
+```
+
 ## Analysis
+
+So far analysis has been done on very small subset of auth.txt.gz. I know wanted to test my result on bigger subset. I used 
+```
+machine learning.ipynb
+```
+to generate multiple non-overlapping subsets of ath.txt.gz and tested my model. The results can be found in
+
+```
+further analysis.ipynb or further analysis.pdf
+```
