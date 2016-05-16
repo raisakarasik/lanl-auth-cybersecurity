@@ -18,8 +18,9 @@ cat sample2.csv | cut -f 2 > sample2v.csv
 ```
 After that I used jupyter notebook for my initial analysis that one can see in 
 ```
-exploration.ipynb or  	exploration.pdf
+exploration.ipynb 
 ```
+also exported to `exploration.pdf` in case you do not have ipython installed.	
 
 ## Trying machine learning
 
@@ -31,8 +32,10 @@ multisample.py
 I then used jupyter notebook to create 55 features and tried a few classifiers to see how well I can predict success for authentication. This code and results can be found in
 
 ```
-machine learning.ipynb or machine learning.pdf
+machine learning.ipynb 
 ```
+also exported to `machine learning.pdf` in case you do not have ipython installed.
+
 
 ## Analysis
 
@@ -43,5 +46,6 @@ multisample.py
 to generate multiple non-overlapping subsets of auth.txt.gz and tested my model. The results can be found in
 
 ```
-further analysis.ipynb or further analysis.pdf
+further analysis.ipynb 
 ```
+also exported to `further analysis.pdf` in case you do not have ipython installed.
