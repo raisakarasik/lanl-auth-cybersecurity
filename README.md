@@ -4,7 +4,7 @@ This is a data analysis of  a cybersecurity dataset from Los Alamos National Lab
 
 Here I only worked with the file auth.txt.gz that represents authentication logs captured for the dataset. This file contains 8 columns of data and my goal was to use first seven columns to predict the values in the last column.
 
-To accomplish this task, I used 64-bit linux computer with 8GB of RAM. 
+To accomplish this task, I used 64-bit Linux computer with 8GB of RAM. 
 
 Below I describe the steps I took for this analysis.
 
@@ -28,7 +28,7 @@ I collected roughly 400,000 data points randomly sampled from auth.txt.gz so tha
 multisample.py
 ```
 
-I then jupyter notebook to creat 55 features and tried a few classifiers to see how well I can predict success for authentication. This code and results can be found in
+I then used jupyter notebook to create 55 features and tried a few classifiers to see how well I can predict success for authentication. This code and results can be found in
 
 ```
 machine learning.ipynb or machine learning.pdf
@@ -36,11 +36,11 @@ machine learning.ipynb or machine learning.pdf
 
 ## Analysis
 
-So far analysis has been done on very small subset of auth.txt.gz. I know wanted to test my result on bigger subset. I used 
+So far analysis has been done on very small subset of auth.txt.gz. I now wanted to test my result on bigger subset. I used 
 ```
-machine learning.ipynb
+multisample.py
 ```
-to generate multiple non-overlapping subsets of ath.txt.gz and tested my model. The results can be found in
+to generate multiple non-overlapping subsets of auth.txt.gz and tested my model. The results can be found in
 
 ```
 further analysis.ipynb or further analysis.pdf
